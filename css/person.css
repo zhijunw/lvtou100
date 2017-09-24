@@ -1,0 +1,21 @@
+/*个人中心页面*/
+.tab-title{height:73px;border-bottom:2px solid #d5d5d5;}
+.tab-title li{float:left;width:85px;height:73px;line-height:73px;text-align:center;font-size:14px;font-family:"微软雅黑";position:relative;}
+.tab-title li.active i{border:6px solid transparent;border-bottom:6px solid #ffcc00;width:0;height:0;position:absolute;bottom:0;left:50%;margin-left:-6px;}
+.tab-title li.active{border-bottom:2px solid #ffcc00;}
+.tab-title li:hover{border-bottom:2px solid #ffcc00;}
+.tab-title li:hover i{border:6px solid transparent;border-bottom:6px solid #ffcc00;width:0;height:0;position:absolute;bottom:0;left:50%;margin-left:-6px;}
+.tab-title li a{color:#8c8c8c;}
+.tab-title li.active a{color:#4a4a4a;}
+.tab-title li a:hover{color:#4a4a4a;}
+
+/*新手指南的主题内容*/
+.newsGuide{margin-top:20px;}
+.newsGuide-title{height:34px;border-top:2px solid #1a8cff;background:#eef5fa;line-height:34px;}
+.newsGuide-title h3{font-size:14px;font-family:"微软雅黑";color:#4a4a4a;margin-left:30px;}
+.newsGuide-content{padding:20px;}
+.newsGuide-content p{font-size:12px;font-family:"微软雅黑";color:#8c8c8c;line-height:2em;text-indent:1em;}
+.newGuide-erweima{width:170px;height:170px;background:#e8e5de;margin:50px auto 20px;position:relative;}
+.newGuide-erweima .erweima-box{width:118px;height:118px;background:#a30000;border-radius:10px;position:absolute;left:30px;top:7px;}
+.newGuide-erweima .erweima-box img{display:block;margin-top:6px;margin-left:6px;}
+.newGuide-erweima span{display: block;font-size: 7px;width: 100%;text-align: center;padding-top: 133px;color:red;}

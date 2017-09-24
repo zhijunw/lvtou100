@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>车票预订</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+	<!--头部内容-->
+	<div class="header">
+		<div class="wrap">
+			<div class="header-top">
+				<!--左边的logo-->
+				<div class="top-logo">
+					<a href="index.html">
+						<img src="images/top-logo.png">
+					</a>
+				</div>
+				<!--右边的登录-->
+				<div class="top-nav">
+					<p class="text-nav ffw fs12">
+						<span><a href="login.html">登录</a></span>
+						<span><a href="enroll.html">注册</a></span>
+						|
+						<span>服务电话：<b>400-604-1088</b></span>
+						|
+						<span>服务时间：<b>6:30~19:00</b></span>
+					</p>
+				</div>
+			</div>
+	</div>
+	<!--下面的导航栏-->
+	<div class="header-nav">
+		<div class="wrap">
+			<ul>
+				<li><a href="index.html">旅途首页</a></li>
+				<li class="active"><a href="ticket.html">车票预订</a></li>
+				<li><a href="hotLine.html">全国时刻表</a></li>
+				<li><a href="login.html">订单查询</a></li>
+				<li><a href="notice.html">新闻公告</a></li>
+				<li><a href="person.html">客服中心</a></li>
+				<li><a href="about.html">关于我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--热门线路-->
+	<div class="hot-circuit">
+		<div class="wrap">
+			<span>热门线路</span>
+		</div>
+	</div>
+	<!--出发地-->
+	<div class="ticket-query">
+		<div class="wrap">
+			<ul>
+				<!--出发地选择-->
+				<li>
+					<div class="queryBox">
+						<p>
+							<strong>出发地</strong>
+							|
+							<input type="text" placeholder="请先选择出发地">
+						</p>
+					</div>
+				</li>
+				<!--目的地选择-->
+				<li>
+					<div class="queryBox">
+						<p>
+							<strong>目的地</strong>
+							|
+							<input type="text" placeholder="请先选择目的地">
+						</p>
+					</div>
+				</li>
+				<!--出发时间选择-->
+				<li>
+					<div class="queryBox">
+						<p>
+							<strong>出发时间</strong>
+							|
+							<input type="text" placeholder="2015-06-29">
+						</p>
+					</div>
+				</li>
+				<!--查询-->
+				<li>
+					<button class="btn" title="查询"><i></i><span>查&nbsp;询</span></button>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--下面的具体内容-->
+	<div class="ticket-content">
+		<div class="wrap">
+			<!--上面的title内容-->
+			<div class="ticket-content-title">
+				<p>
+					本网站发售普通车票，查询车票结果中发车时间、车型、票价等预订信息与实际预订结果可能存在差异，以实际预订结果为准。 如需购买儿童票、荣军车票以及携带1.2米以下免票儿童的旅客请到各车站 售票窗口购买。
+				</p>
+			</div>
+			<!--下面的主题内容-->
+			<div class="tickent-content-body">
+				<!--主题内容的左侧-->
+				<div class="tickent-content-body-left">
+					<!--左边的内容的顶部-->
+					<div class="body-left-titile">
+						<ul>
+							<li class="list-left"><i></i></li>
+							<li><a href=""><span>07-19周六</span></a></li>
+							<li><a href=""><span>07-20周日</span></a></li>
+							<li class="active"><a href=""><span>07-21周一</span></a></li>
+							<li><a href=""><span>07-21周二</span></a></li>
+							<li><a href=""><span>07-21周三</span></a></li>
+							<li><a href=""><span>07-21周四</span></a></li>
+							<li class="list-right"><b></b></li>
+						</ul>
+					</div>
+					<!--左边的内容的时间-->
+					<div class="body-left-time">
+						<!--上面的发车时间-->
+						<div class="depart-time">
+							<div class="time-left">
+								<span>发展时间：</span>
+							</div>
+							<div class="time-right">
+								<label><input type="checkbox">上午（06:00-12:00）</label>
+								<label><input type="checkbox">下午（06:00-12:00</label>
+								<label><input type="checkbox">晚上（06:00-12:00</label>
+							</div>
+						</div>
+						<!--下面的始发站-->
+						<div class="station">
+							<div class="station-left">
+								<span>始发站：</span>
+							</div>
+							<div class="station-right"> 
+								<label><input type="checkbox">徐坊客运站</label>
+								<label><input type="checkbox">长安车站</label>
+								<label><input type="checkbox">洪城客运站</label>
+							</div>
+						</div>
+					</div>
+					<!--左边的班次-->
+					<div class="body-left-classes">
+						<!--班次的title-->
+						<div class="classes-title">
+							<span class="span1" style="width:82px;">班次号</span>
+							<span class="span2" style="width:119px;">路线</span>
+							<span class="span3" style="width:75px;">发车时间</span>
+							<span class="span4" style="width:80px;">出发\到达</span>
+							<span class="span5" style="width:100px;">里程</span>
+							<span class="span6" style="width:95px;">车型</span>
+							<span class="span7" style="width:62px;">票价</span>
+							<span class="span8" style="width:24px;">状态</span>
+						</div>
+						<!--班次的内容-->
+						<div class="classes-content">
+							<div class="content-1">
+								<span class="span1" style="width:82px;">05002</span>
+								<span class="span2" style="width:119px;">徐坊客运站-抚州直达</span>
+								<span class="span3" style="width:75px;">07:00</span>
+								<span class="span4" style="width:80px;">
+									<p class="startIco">徐坊客运站</p>
+									<p class="arriveIco">抚州直达</p>
+								</span>
+								<span class="span5" style="width:100px;">1365 公里</span>
+								<span class="span6" style="width:95px;">大型高二级座</span>
+								<span class="span7" style="width:62px;">￥<b style="color:red;font-size:16px;">338</b></span>
+								<span class="span8" style="width:24px;">可售</span>
+								<button>购买车票</button>
+							</div>
+							<div class="content-1">
+								<span class="span1" style="width:82px;">05002</span>
+								<span class="span2" style="width:119px;">徐坊客运站-抚州直达</span>
+								<span class="span3" style="width:75px;">07:00</span>
+								<span class="span4" style="width:80px;">
+									<p class="startIco">徐坊客运站</p>
+									<p class="arriveIco">抚州直达</p>
+								</span>
+								<span class="span5" style="width:100px;">1365 公里</span>
+								<span class="span6" style="width:95px;">大型高二级座</span>
+								<span class="span7" style="width:62px;">￥<b style="color:red;font-size:16px;">338</b></span>
+								<span class="span8" style="width:24px;">可售</span>
+								<button>购买车票</button>
+							</div>
+							<div class="content-1">
+								<span class="span1" style="width:82px;">05002</span>
+								<span class="span2" style="width:119px;">徐坊客运站-抚州直达</span>
+								<span class="span3" style="width:75px;">07:00</span>
+								<span class="span4" style="width:80px;">
+									<p class="startIco">徐坊客运站</p>
+									<p class="arriveIco">抚州直达</p>
+								</span>
+								<span class="span5" style="width:100px;">1365 公里</span>
+								<span class="span6" style="width:95px;">大型高二级座</span>
+								<span class="span7" style="width:62px;">￥<b style="color:red;font-size:16px;">338</b></span>
+								<span class="span8" style="width:24px;">可售</span>
+								<button>购买车票</button>
+							</div>
+							<div class="content-1">
+								<span class="span1" style="width:82px;">05002</span>
+								<span class="span2" style="width:119px;">徐坊客运站-抚州直达</span>
+								<span class="span3" style="width:75px;">07:00</span>
+								<span class="span4" style="width:80px;">
+									<p class="startIco">徐坊客运站</p>
+									<p class="arriveIco">抚州直达</p>
+								</span>
+								<span class="span5" style="width:100px;">1365 公里</span>
+								<span class="span6" style="width:95px;">大型高二级座</span>
+								<span class="span7" style="width:62px;">￥<b style="color:red;font-size:16px;">338</b></span>
+								<span class="span8" style="width:24px;">可售</span>
+								<button>购买车票</button>
+							</div>
+							<div class="content-1">
+								<span class="span1" style="width:82px;">05002</span>
+								<span class="span2" style="width:119px;">徐坊客运站-抚州直达</span>
+								<span class="span3" style="width:75px;">07:00</span>
+								<span class="span4" style="width:80px;">
+									<p class="startIco">徐坊客运站</p>
+									<p class="arriveIco">抚州直达</p>
+								</span>
+								<span class="span5" style="width:100px;">1365 公里</span>
+								<span class="span6" style="width:95px;">大型高二级座</span>
+								<span class="span7" style="width:62px;">￥<b style="color:red;font-size:16px;">338</b></span>
+								<span class="span8" style="width:24px;">可售</span>
+								<button>购买车票</button>
+							</div>
+							<div class="content-1">
+								<span class="span1" style="width:82px;">05002</span>
+								<span class="span2" style="width:119px;">徐坊客运站-抚州直达</span>
+								<span class="span3" style="width:75px;">07:00</span>
+								<span class="span4" style="width:80px;">
+									<p class="startIco">徐坊客运站</p>
+									<p class="arriveIco">抚州直达</p>
+								</span>
+								<span class="span5" style="width:100px;">1365 公里</span>
+								<span class="span6" style="width:95px;">大型高二级座</span>
+								<span class="span7" style="width:62px;">￥<b style="color:red;font-size:16px;">338</b></span>
+								<span class="span8" style="width:24px;">可售</span>
+								<button>购买车票</button>
+							</div>
+							<div class="content-1">
+								<span class="span1" style="width:82px;">05002</span>
+								<span class="span2" style="width:119px;">徐坊客运站-抚州直达</span>
+								<span class="span3" style="width:75px;">07:00</span>
+								<span class="span4" style="width:80px;">
+									<p class="startIco">徐坊客运站</p>
+									<p class="arriveIco">抚州直达</p>
+								</span>
+								<span class="span5" style="width:100px;">1365 公里</span>
+								<span class="span6" style="width:95px;">大型高二级座</span>
+								<span class="span7" style="width:62px;">￥<b style="color:red;font-size:16px;">338</b></span>
+								<span class="span8" style="width:24px;">可售</span>
+								<button>购买车票</button>
+							</div>
+							<div class="content-1">
+								<ul>
+									<li class="list1"><a href="">下一页</a></li>
+									<li><a href="">8</a></li>
+									<li><a href="">7</a></li>
+									<li><a href="">6</a></li>
+									<li><a href="">5</a></li>
+									<li><a href="">4</a></li>
+									<li><a href="">3</a></li>
+									<li><a href="">2</a></li>
+									<li class="active"><a href="">1</a></li>
+									<li class="list1"><a href="">上一页</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--主题内容的右侧-->
+				<div class="tickent-content-body-right">
+					<div class="body-right-title">
+						<h3>购票须知</h3>
+						<div class="title-body">
+							<p>1.请务必在订票后10分钟内完成支付，否则系统将自动取消您所预定的车票；</p>
+							<p>2.每单最多限购4张车票；</p>
+							<p>3.本网站不支持车票的退票服务，客户如果已经成功购买，必须在相应车站换取纸质车票后在退票窗口进行退票；</p>
+							<p>4.如果支付不成功或确认无票后将短信通知您，您所支付的款项会按您的支付渠道全额退回；</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--底部内容-->
+	<div class="footer">
+		<div class="wrap">
+			<!--底部所有内容-->
+			<div class="footer-content">
+				<!--底部导航栏-->
+				<div class="footer-map">
+					<ul>
+						<!--关于我们部分-->
+						<li class="list1">
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>关于我们</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+							</div>
+						</li>
+						<!--新手指南部分-->
+						<li>
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>新手指南</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+							</div>
+						</li>
+						<!--退票说明部分-->
+						<li>
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>退票说明</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+							</div>
+						</li>
+						<!--个人服务部分-->
+						<li>
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>个人服务</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+							</div>
+						</li>
+						<!--网站指南部分-->
+						<li>
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>网站指南</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+							</div>
+						</li>
+						<!--网站联盟部分-->
+						<li class="list2">
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>网站联盟</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+								<p><a href="">代理结算</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--友情链接部分-->
+				<div class="friendLink">
+					<p>
+						<b>友情链接：</b><span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>
+					</p>
+				</div>
+				<!--Copyright-->
+				<p class="footer-text">Copyright © 2011-2014 www.lvtu100.com | 上海天雅物联网科技有限公司 版权所有 沪ICP</p>
+				<!--下面的列表跳转链接-->
+				<div class="footer-list">
+					<ul>
+						<li>
+							<a href="">
+								<div class="shanghaigongshang">
+									<img src="images/gongshang.png">
+									<span>上海工商</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="shanghaigongshang">
+									<img src="images/gongshang.png">
+									<span>上海工商</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="shanghaigongshang">
+									<img src="images/gongshang.png">
+									<span>上海工商</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="shanghaigongshang">
+									<img src="images/gongshang.png">
+									<span>上海工商</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--网站右边的侧栏-->
+	<div class="sidebar">
+		<div class="top">
+			<a href="">
+				<img src="images/sidebar.png">
+			</a>
+			<a href="" class="ico ico_1"></a>
+			<a href="" class="ico ico_2"></a>
+			<a href="" class="ico ico_3"></a>
+			<a href="" class="ico ico_4"></a>
+		</div>
+		<div class="bottom">
+			<a href="" class="ico_bottom ico_5"></a>
+			<a href="" class="ico_bottom ico_6"></a>
+		</div>
+	</div>
+</body>
+</html>

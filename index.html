@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>旅途100</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/laydate/laydate.js"></script>
+	<script type="text/javascript" src="js/getallstartcity.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<!--头部内容-->
+	<div class="header">
+		<div class="wrap">
+			<div class="header-top">
+				<!--左边的logo-->
+				<div class="top-logo">
+					<a href="index.html">
+						<img src="images/top-logo.png">
+					</a>
+				</div>
+				<!--右边的登录-->
+				<div class="top-nav">
+					<p class="text-nav ffw fs12">
+						<span><a href="login.html">登录</a></span>
+						<span><a href="enroll.html">注册</a></span>
+						|
+						<span>服务电话：<b>400-604-1088</b></span>
+						|
+						<span>服务时间：<b>6:30~19:00</b></span>
+					</p>
+				</div>
+			</div>
+	</div>
+	<!--下面的导航栏-->
+	<div class="header-nav">
+		<div class="wrap">
+			<ul>
+				<li class="active"><a href="">旅途首页</a></li>
+				<li><a href="ticket.html">车票预订</a></li>
+				<li><a href="hotLine.html">全国时刻表</a></li>
+				<li><a href="login.html">订单查询</a></li>
+				<li><a href="notice.html">新闻公告</a></li>
+				<li><a href="person.html">客服中心</a></li>
+				<li><a href="about.html">关于我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--banner轮播部分-->
+	<div class="index-banner">
+		<!--banner背景里面的图片-->
+		<div class="banner-ico">
+			<img src="images/banner-1.jpg">
+			<img src="images/banner-2.jpg" style="display:none;">
+			<img src="images/banner-3.jpg" style="display:none;">
+		</div>
+		<!-- 控制轮播的小点-->
+		<ul class="banner-dot clearfix">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<!--控制轮播的上下切换-->
+		<div class="banner-prev"><</div>
+		<div class="banner-next">></div>
+		<!--banner里面的搜索框-->
+		<div class="wrap">
+			<!--左边的搜索部分-->
+			<div class="banner-search">
+				<h3>汽车票查询</h3>
+				<div class="formBox">
+					<form>
+						<div class="item clearfix">
+							<p>出发城市</p>
+							<input type="text" placeholder="中文\拼音\首字母" class="stratCity-search">
+							<!--出发城市里面的内容-->
+							<div class="item-cityTitle" style="display:none;">
+								<h4 class="clearfix">可直接选择城市或输入城市全拼、简拼、汉字<a href="javascript:void(0)" class="close-btn">x</a></h4>
+								<div class="item-cityContent clearfix">
+									<div class="item-hotCity">
+										<dl>
+											<dt>热门城市</dt>
+											<dd>
+												<span>南昌</span>
+												<span>景德镇</span>
+												<span>吉安</span>
+												<span>上饶</span>
+												<span>抚州</span>
+												<span>萍乡</span>
+												<span>鹰潭</span>
+												<span>新余</span>
+												<span>婺源</span>
+												<span>上海</span>
+												<span>马鞍山</span>
+												<span>黄山</span>
+											</dd>	
+										</dl>
+									</div>
+									<div class="item-CityWrap">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item clearfix">
+							<p>到达城市</p>
+							<input type="text" placeholder="中文\拼音\首字母" class="endCity-search">
+							<!--到达城市里面的内容-->
+							<div class="end-cityTitle" style="display:none;">
+								<h4 class="clearfix">可直接选择城市或输入城市全拼、简拼、汉字<a href="javascript:void(0)" class="close-btn">x</a></h4>
+								<div class="end-cityContent clearfix">
+									<div class="item-hotCity">
+										<dl>
+											<dt>热门城市</dt>
+											<dd>
+												<span>南昌</span>
+												<span>景德镇</span>
+												<span>吉安</span>
+												<span>上饶</span>
+												<span>抚州</span>
+												<span>萍乡</span>
+												<span>鹰潭</span>
+												<span>新余</span>
+												<span>婺源</span>
+												<span>上海</span>
+												<span>马鞍山</span>
+												<span>黄山</span>
+											</dd>	
+										</dl>
+									</div>
+									<div class="item-CityWrap">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item clearfix">
+							<p>出发时间</p>
+							<input type="text" placeholder="中文\拼音\首字母" onclick="" id="startTime">
+						</div>
+						<div class="item clearfix">
+							<p> </p>
+							<button>搜索</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--导航查询部分-->
+	<div class="index-query">
+		<div class="wrap">
+			<ul>
+				<!--在线查询部分-->
+				<li>
+					<div class="box">
+						<img src="images/nav-search.png">
+						<p>在线查询</p>
+					</div>
+				</li>
+				<li>
+					<div class="box" style="background:#27a7e9">
+						<img src="images/yuding.png">
+						<p>在线预订</p>
+					</div>
+				</li>
+				<li>
+					<div class="box" style="background:#ffa922">
+						<img src="images/zhifu.png">
+						<p>在线支付</p>
+					</div>
+				</li>
+				<li>
+					<div class="box" style="background:#ff80aa">
+						<img src="images/dianziquan.png">
+						<p>发送电子券</p>
+					</div>
+				</li>
+				<li>
+					<div class="box" style="background:#68cc95">
+						<img src="images/qupiao.png">
+						<p>现场取票</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--汽车周边游-->
+	<div class="car-travel">
+		<div class="wrap">
+			<div class="car-content">
+				<!--汽车周边游的头部-->
+				<div class="title">
+					<h2><span class="title-car">汽车周边游</span></h2>
+					<ul class="title-car-list">
+						<li><span class="active">上海</span></li>
+						<li><span>浙江</span></li>
+						<li><span>江苏</span></li>
+						<li><span>北京</span></li>
+						<li><span>天津</span></li>
+						<li><span>苏州</span></li>
+						<li><span>杭州</span></li>
+					</ul>
+				</div>
+				<!--汽车周边游里面的景点内容-->
+				<div clspanss="travel-wrap">
+					<!--上海的景点-->
+					<div class="travel-cont">
+						<!--左边的内容-->
+						<div class="travel-cont-left">
+							<!--左边的上面的图片-->
+							<div class="left-fenghaiwan">
+								<span>枫海湾</span>
+							</div>
+							<!--左边的下面的内容-->
+							<div class="shanghaiToxitang">
+								<span>上海西塘</span>
+								<i class="dianzan active"></i>
+								<b>￥133</b>
+							</div>
+						</div>
+						<!--右边的内容-->
+						<div class="travel-cont-right">
+							<ul>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>深龙港</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>岁龙潭</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥93</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到宁波-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>桂林巷</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－宁波</span>
+											<a href=""><i></i></a>
+											<strong>￥153</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到天津-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>澎湖湾</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海-天津</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到无锡-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>大雁塔</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<a href=""><span>上海－无锡</span></a>
+											<a href=""><i></i></a>
+											<strong>￥243</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到苏州-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>独木桥</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－苏州</span>
+											<a href=""><i></i></a>
+											<strong>￥311</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--浙江的景点-->
+					<div class="travel-cont" style="display:none;">
+						<!--左边的内容-->
+						<div class="travel-cont-left">
+							<!--左边的上面的图片-->
+							<div class="left-fenghaiwan">
+								<span>枫海湾</span>
+							</div>
+							<!--左边的下面的内容-->
+							<div class="shanghaiToxitang">
+								<span>浙江景点</span>
+								<i></i>
+								<b>￥133</b>
+							</div>
+						</div>
+						<!--右边的内容-->
+						<div class="travel-cont-right">
+							<ul>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>深龙港</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>岁龙潭</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥93</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到宁波-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>桂林巷</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－宁波</span>
+											<a href=""><i></i></a>
+											<strong>￥153</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到天津-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>澎湖湾</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海-天津</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到无锡-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>大雁塔</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<a href=""><span>上海－无锡</span></a>
+											<a href=""><i></i></a>
+											<strong>￥243</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到苏州-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>独木桥</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－苏州</span>
+											<a href=""><i></i></a>
+											<strong>￥311</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--江苏的景点-->
+					<div class="travel-cont" style="display:none;">
+						<!--左边的内容-->
+						<div class="travel-cont-left">
+							<!--左边的上面的图片-->
+							<div class="left-fenghaiwan">
+								<span>枫海湾</span>
+							</div>
+							<!--左边的下面的内容-->
+							<div class="shanghaiToxitang">
+								<span>江苏景点</span>
+								<i></i>
+								<b>￥133</b>
+							</div>
+						</div>
+						<!--右边的内容-->
+						<div class="travel-cont-right">
+							<ul>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>深龙港</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>岁龙潭</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥93</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到宁波-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>桂林巷</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－宁波</span>
+											<a href=""><i></i></a>
+											<strong>￥153</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到天津-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>澎湖湾</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海-天津</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到无锡-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>大雁塔</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<a href=""><span>上海－无锡</span></a>
+											<a href=""><i></i></a>
+											<strong>￥243</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到苏州-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>独木桥</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－苏州</span>
+											<a href=""><i></i></a>
+											<strong>￥311</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--北京的景点-->
+					<div class="travel-cont" style="display:none;">
+						<!--左边的内容-->
+						<div class="travel-cont-left">
+							<!--左边的上面的图片-->
+							<div class="left-fenghaiwan">
+								<span>枫海湾</span>
+							</div>
+							<!--左边的下面的内容-->
+							<div class="shanghaiToxitang">
+								<span>北京景点</span>
+								<i></i>
+								<b>￥133</b>
+							</div>
+						</div>
+						<!--右边的内容-->
+						<div class="travel-cont-right">
+							<ul>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>深龙港</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>岁龙潭</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥93</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到宁波-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>桂林巷</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－宁波</span>
+											<a href=""><i></i></a>
+											<strong>￥153</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到天津-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>澎湖湾</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海-天津</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到无锡-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>大雁塔</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<a href=""><span>上海－无锡</span></a>
+											<a href=""><i></i></a>
+											<strong>￥243</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到苏州-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>独木桥</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－苏州</span>
+											<a href=""><i></i></a>
+											<strong>￥311</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--天津的景点-->
+					<div class="travel-cont" style="display:none;">
+						<!--左边的内容-->
+						<div class="travel-cont-left">
+							<!--左边的上面的图片-->
+							<div class="left-fenghaiwan">
+								<span>枫海湾</span>
+							</div>
+							<!--左边的下面的内容-->
+							<div class="shanghaiToxitang">
+								<span>天津景点</span>
+								<i></i>
+								<b>￥133</b>
+							</div>
+						</div>
+						<!--右边的内容-->
+						<div class="travel-cont-right">
+							<ul>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>深龙港</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>岁龙潭</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥93</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到宁波-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>桂林巷</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－宁波</span>
+											<a href=""><i></i></a>
+											<strong>￥153</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到天津-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>澎湖湾</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海-天津</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到无锡-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>大雁塔</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<a href=""><span>上海－无锡</span></a>
+											<a href=""><i></i></a>
+											<strong>￥243</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到苏州-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>独木桥</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－苏州</span>
+											<a href=""><i></i></a>
+											<strong>￥311</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--苏州的景点-->
+					<div class="travel-cont" style="display:none;">
+						<!--左边的内容-->
+						<div class="travel-cont-left">
+							<!--左边的上面的图片-->
+							<div class="left-fenghaiwan">
+								<span>枫海湾</span>
+							</div>
+							<!--左边的下面的内容-->
+							<div class="shanghaiToxitang">
+								<span>苏州景点</span>
+								<i></i>
+								<b>￥133</b>
+							</div>
+						</div>
+						<!--右边的内容-->
+						<div class="travel-cont-right">
+							<ul>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>深龙港</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>岁龙潭</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥93</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到宁波-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>桂林巷</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－宁波</span>
+											<a href=""><i></i></a>
+											<strong>￥153</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到天津-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>澎湖湾</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海-天津</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到无锡-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>大雁塔</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<a href=""><span>上海－无锡</span></a>
+											<a href=""><i></i></a>
+											<strong>￥243</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到苏州-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>独木桥</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－苏州</span>
+											<a href=""><i></i></a>
+											<strong>￥311</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--杭州的景点-->
+					<div class="travel-cont" style="display:none;">
+						<!--左边的内容-->
+						<div class="travel-cont-left">
+							<!--左边的上面的图片-->
+							<div class="left-fenghaiwan">
+								<span>枫海湾</span>
+							</div>
+							<!--左边的下面的内容-->
+							<div class="shanghaiToxitang">
+								<span>杭州景点</span>
+								<i></i>
+								<b>￥133</b>
+							</div>
+						</div>
+						<!--右边的内容-->
+						<div class="travel-cont-right">
+							<ul>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>深龙港</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到浙江-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>岁龙潭</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－浙江</span>
+											<a href=""><i></i></a>
+											<strong>￥93</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到宁波-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>桂林巷</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－宁波</span>
+											<a href=""><i></i></a>
+											<strong>￥153</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到天津-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>澎湖湾</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海-天津</span>
+											<a href=""><i></i></a>
+											<strong>￥110</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到无锡-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>大雁塔</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<a href=""><span>上海－无锡</span></a>
+											<a href=""><i></i></a>
+											<strong>￥243</strong>
+										</div>
+									</a>
+								</li>
+								<!--上海到苏州-->
+								<li>
+									<a href="">
+										<div class="shenlonggang">
+											<span>独木桥</span>
+										</div>
+										<div class="shanghaiTozhejiang">
+											<span>上海－苏州</span>
+											<a href=""><i></i></a>
+											<strong>￥311</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!--下面的小点点-->
+				<div class="cont-circle">
+					<ul>
+						<li class="active"><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--旅途公告-->
+	<div class="trip">
+		<div class="wrap">
+			<!--最左边的旅途公告栏目-->
+			<div class="trip-not">
+				<!--左边的图片-->
+				<div class="not-left">
+				</div>
+				<!--右边的公告-->
+				<div class="not-title">
+					<h3>旅途公告</h3>
+					<span><a href="">更多</a></span>
+					<p class="p1"><a href="">端午啦！旅途100网汽车票预售...</a></p>
+					<p class="p2"><a href="">六一到了！让爱跟随旅途100快...</a></p>
+					<p class="p3"><a href="">【好消息】福建、湖南、四川、广...</a></p>
+				</div>
+			</div>
+			<!--中间的最新资讯-->
+			<div class="trip-news">
+				<!--左边的图片-->
+				<div class="not-left">
+				</div>
+				<!--右边的公告-->
+				<div class="not-title">
+					<h3>旅途公告</h3>
+					<span><a href="">更多</a></span>
+					<p class="p1"><a href="">端午啦！旅途100网汽车票预售...</a></p>
+					<p class="p2"><a href="">六一到了！让爱跟随旅途100快...</a></p>
+					<p class="p3"><a href="">【好消息】福建、湖南、四川、广...</a></p>
+				</div>
+			</div>
+			<!--右边的常见问题-->
+			<div class="trip-question">
+				<!--左边的图片-->
+				<div class="not-left">
+				</div>
+				<!--右边的公告-->
+				<div class="not-title">
+					<h3>旅途公告</h3>
+					<span><a href="">更多</a></span>
+					<ul>
+						<li class="list1">
+							<a href="" class="wangshangkefu">网上客服</a>
+						</li>
+						<li>
+							<a href="" class="dingpiaoxuzhi">订票须知</a>
+						</li>
+						<li>
+							<a href="" class="zhifuxianshi">支付限时</a>
+						</li>
+						<li>
+							<a href="" class="zhifufangshi">支付方式</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--热门汽车票-->
+	<div class="car-hot">
+		<div class="wrap">
+			<div class="hot-cont">
+				<!--热门汽车票的头部-->
+				<div class="hot-title">
+					<h2>热门汽车票</h2>
+				</div>
+				<!--里面内容的左边部分-->
+				<div class="hot-body">
+					<!--热门车票的左边部分-->
+					<div class="body-left">
+						<ul class="body-left-list">
+							<li class="active"><aspan>上海</span></li>
+							<li><span>杭州</span></li>
+							<li><span>浙江</span></li>
+							<li><span>苏州</span></li>
+							<li><span>江西</span></li>
+						</ul>
+					</div>
+					<!--热门车票的右边部分-->
+					<div class="body-right">
+						<ul>
+							<li class="list1">
+								<a href="">
+									<span>上海市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+						</ul>
+						<ul style="display:none;">
+							<li class="list1">
+								<a href="">
+									<span>杭州市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+						</ul>
+						<ul style="display:none;">
+							<li class="list1">
+								<a href="">
+									<span>浙江市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+						</ul>
+						<ul style="display:none;">
+							<li class="list1">
+								<a href="">
+									<span>苏州市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+						</ul>
+						<ul style="display:none;">
+							<li class="list1">
+								<a href="">
+									<span>江西市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li class="list1">
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+							<li>
+								<a href="">
+									<span>南京市-景德镇</span>
+									<b>￥733</b>
+								</a>	
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--网站底部-->
+	<div class="footer">
+		<div class="wrap">
+			<!--底部所有内容-->
+			<div class="footer-content">
+				<!--底部导航栏-->
+				<div class="footer-map">
+					<ul>
+						<!--关于我们部分-->
+						<li class="list1">
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>关于我们</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+							</div>
+						</li>
+						<!--新手指南部分-->
+						<li>
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>新手指南</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+							</div>
+						</li>
+						<!--退票说明部分-->
+						<li>
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>退票说明</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+							</div>
+						</li>
+						<!--个人服务部分-->
+						<li>
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>个人服务</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+							</div>
+						</li>
+						<!--网站指南部分-->
+						<li>
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>网站指南</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+							</div>
+						</li>
+						<!--网站联盟部分-->
+						<li class="list2">
+							<div class="map-left">
+							</div>
+							<div class="map-right">
+								<h3>网站联盟</h3>
+								<p><a href="">旅途100介绍</a></p>
+								<p><a href="">联系方式</a></p>
+								<p><a href="">免责声明</a></p>
+								<p><a href="">代理结算</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--友情链接部分-->
+				<div class="friendLink">
+					<p>
+						<b>友情链接：</b><span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>|<span><a href="">南昌旅游</a></span>
+					</p>
+				</div>
+				<!--Copyright-->
+				<p class="footer-text">Copyright © 2011-2014 www.lvtu100.com | 上海天雅物联网科技有限公司 版权所有 沪ICP</p>
+				<!--下面的列表跳转链接-->
+				<div class="footer-list">
+					<ul>
+						<li>
+							<a href="">
+								<div class="shanghaigongshang">
+									<img src="images/gongshang.png">
+									<span>上海工商</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="shanghaigongshang">
+									<img src="images/buliangxinxi.png" style="width:35%;">
+									<span>上海工商</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="shanghaigongshang">
+									<img src="images/wangluoshehui.png">
+									<span>上海工商</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="shanghaigongshang">
+									<img src="images/shanghaiwangjing.png">
+									<span>上海工商</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--网站右边的侧栏-->
+	<div class="sidebar">
+		<div class="top">
+			<a href="">
+				<img src="images/sidebar.png">
+			</a>
+			<a href="" class="ico ico_1"></a>
+			<a href="" class="ico ico_2"></a>
+			<a href="" class="ico ico_3"></a>
+			<a href="" class="ico ico_4"></a>
+		</div>
+		<div class="bottom">
+			<a href="" class="ico_bottom ico_5"></a>
+			<a href="" class="ico_bottom ico_6"></a>
+		</div>
+	</div>
+	<!--返回顶部的效果-->
+	<a href="javascript:void(0)" class="return-top"></a>
+</body>
+</html>

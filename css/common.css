@@ -1,0 +1,154 @@
+/*公用样式*/
+*{margin:0;padding:0;}
+body{background:#f5f5f5;}
+ul,li{list-style:none;}
+a{text-decoration:none;color:#000;}
+.ffw{font-family:"微软雅黑";}
+.fs12{font-size:12px;}
+.fs14{font-size:14px;}
+.fs16{font-size:16px;}
+i,em,b{font-style:normal;}
+
+/* reset css */
+html {
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+table { 
+    border-collapse:collapse;
+    border-spacing:0; 
+} 
+fieldset,img { 
+    border: 0; 
+} 
+address,caption,cite,code,dfn,em,strong,th,var { 
+    font-weight: normal;
+    font-style: normal;
+} 
+ol,ul { 
+    list-style:none;
+} 
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+button {
+    outline:none;
+}
+a{
+    text-decoration: none;
+}
+/* 清除浮动 */
+.clearfix:after {       
+    content: ".";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+}
+
+.clearfix { *zoom:1;}   /*这是针对于IE6的，因为IE6不支持:after伪类，这个神奇的zoom:1让IE6的元素可以清除浮动来包裹内部元素。*/
+
+/* 文本溢出省略号 */
+.text-overflow{
+    display:block;
+    width:100%;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+/* 不定宽元素垂直居中对齐 */
+/*父容器*/
+.vertical-box:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    text-align:center;
+}
+/*子容器*/
+.vertical-middle{
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/*头部样式*/
+.header{width:100%;}
+.wrap{width:1040px;margin:0 auto;position:relative;}
+.header-top{height:72px;background:#f5f5f5;overflow:hidden;}
+.header-top .top-logo{margin-top:12px;margin-left:20px;float:left;}
+.header-top .top-nav{float:right;margin-right:20px;margin-top:30px;}
+.header-top .top-nav .text-nav{font-size:12px;color:#000;}
+.header-top .top-nav .text-nav span a{font-size:12px;color:#000;}
+.header-top .top-nav .text-nav span a:hover{color:#1a8cff;}
+.header-top .top-nav .text-nav span b{font-size:12px;color:#1a8cff;}
+/*下面的导航栏*/
+.header-nav{width:100%;background:#1a8cff;height:50px;}
+.header-nav li{float:left;line-height:50px;width:130px;text-align:center;}
+.header-nav li a{font-size:16px;font-family:"微软雅黑";color:#fff;}
+.header-nav li.active{background:#ffcc00;}
+.header-nav li.active a{color:#a26a00;}
+.header-nav li:hover{background:#ffcc00;}
+.header-nav li:hover a{color:#a26a00;}
+/*右边的侧栏样式*/
+.sidebar{width:36px;position:fixed;height:100%;right:0;top:0;background:#eef5fa;}
+a.ico{background-repeat:none-repeat;border-top:1px solid #5f97db;display:block;width:24px;height:56px;margin:0 auto;}
+a.ico_1{background:url(../images/saoyisao.png);border-top:none;}
+a.ico_2{background:url(../images/info-login.png);}
+a.ico_3{background:url(../images/share.png);}
+a.ico_4{background:url(../images/fankui.png);}
+
+.sidebar .bottom{right:0;bottom:0;position:absolute;}
+a.ico_bottom{background-repeat:none-repeat;border-top:1px solid #5f97db;display:block;width:24px;height:71px;margin:0 auto;}
+a.ico_5{background:url(../images/xinlang.png);}
+a.ico_6{background:url(../images/weixibn.png);}
+
+
+
+/*网站底部部分*/
+.footer{margin-top:20px;background:#fff;}
+.footer-content{padding:0 20px;}
+.footer-map{width:1000px;height:179px;border-bottom:1px dashed #d5d5d5;overflow:hidden;}
+.footer-map li{width:147px;height:140px;border-right:1px solid #ddd;margin-top:18px;float:left;margin-left:22px;}
+.footer-map li.list1{margin-left:0;}
+.footer-map li.list2{border-right:none;}
+.footer-map li .map-left{background:url(../images/renwuico.png) no-repeat;width:28px;height:24px;float:left;}
+.footer-map li .map-right h3{font-size:16px;font-family: "微软雅黑";color:#333333;margin-left:40px;}
+.footer-map li .map-right p{font-size:12px;font-family: "微软雅黑";margin-left:40px;margin-top:15px;}
+.footer-map li .map-right p a{color:#8c8c8c;}
+.footer-map li .map-right p a:hover{color:#41a9ef;}
+/*友情链接部分*/
+.friendLink{padding:20px 0;border-bottom:1px dashed #d5d5d5;}
+.friendLink p{text-indent:2em;font-size:12px;line-height:2em;color:gray;}
+.friendLink b{font-size:16px;font-weight:700;text-indent:2em;}
+.friendLink span a{color:gray;}
+.friendLink span a:hover{color:#41a9ef;}
+.footer-text{text-align:center;font-size:14px;font-family:"微软雅黑";color:#333333;text-align:center;padding-top:20px;}
+.footer-list ul{width:425px;height:35px;margin:25px auto;}
+.footer-list ul li{width:88px;height:33px;border:1px solid #d5d5d5;float:left;margin-right:15px;}
+.footer-list ul li .shanghaigongshang{height:33px;position:relative;}
+.footer-list ul li .shanghaigongshang img{position:absolute;top:3px;left:8px;}
+.footer-list ul li .shanghaigongshang span{font-size:12px;font-family:"微软雅黑";color:#4a4a4a;line-height:33px;padding-left:38px;}

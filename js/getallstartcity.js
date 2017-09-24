@@ -1,0 +1,923 @@
+var cityData = {
+	result: 0,
+	code: 0,
+	data: {
+		江西省: [
+		{
+			startcityid: 22,
+			province: "江西省",
+			cityname: "安义",
+			longspell: "AnYi",
+			shortspell: "AY",
+			firstchar: "A",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 27,
+			province: "江西省",
+			cityname: "崇仁",
+			longspell: "ChongRen",
+			shortspell: "CR",
+			firstchar: "C",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 12,
+			province: "江西省",
+			cityname: "德兴",
+			longspell: "DeXingShi",
+			shortspell: "DXS",
+			firstchar: "D",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 106,
+			province: "江西省",
+			cityname: "东乡",
+			longspell: "DongXiang",
+			shortspell: "DX",
+			firstchar: "D",
+			version: 1470845111032,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 3,
+			province: "江西省",
+			cityname: "抚州",
+			longspell: "FuZhouShi",
+			shortspell: "FZS",
+			firstchar: "F",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 4,
+			province: "江西省",
+			cityname: "抚州金溪",
+			longspell: "FuZhouShiJinXiXian",
+			shortspell: "FZSJXX",
+			firstchar: "F",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 31,
+			province: "江西省",
+			cityname: "分宜",
+			longspell: "FenYi",
+			shortspell: "FY",
+			firstchar: "F",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 29,
+			province: "江西省",
+			cityname: "广昌",
+			longspell: "GuangChang",
+			shortspell: "GC",
+			firstchar: "G",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 30,
+			province: "江西省",
+			cityname: "广丰",
+			longspell: "GuangFeng",
+			shortspell: "GF",
+			firstchar: "G",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 7,
+			province: "江西省",
+			cityname: "景德镇",
+			longspell: "JingDeZhenShi",
+			shortspell: "JDZS",
+			firstchar: "J",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 15,
+			province: "江西省",
+			cityname: "吉安",
+			longspell: "JiAnShi",
+			shortspell: "JAS",
+			firstchar: "J",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 41,
+			province: "江西省",
+			cityname: "进贤",
+			longspell: "JinXian",
+			shortspell: "JX",
+			firstchar: "J",
+			version: 1447949109173,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 20,
+			province: "江西省",
+			cityname: "临川",
+			longspell: "LinChuan",
+			shortspell: "LC",
+			firstchar: "L",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 23,
+			province: "江西省",
+			cityname: "乐平",
+			longspell: "LePing",
+			shortspell: "LP",
+			firstchar: "L",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 24,
+			province: "江西省",
+			cityname: "乐安",
+			longspell: "LeAn",
+			shortspell: "LA",
+			firstchar: "L",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 40,
+			province: "江西省",
+			cityname: "黎川",
+			longspell: "LiChuan",
+			shortspell: "LC",
+			firstchar: "L",
+			version: 1447776098649,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 9,
+			province: "江西省",
+			cityname: "南昌",
+			longspell: "NanChangShi",
+			shortspell: "NCS",
+			firstchar: "N",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 17,
+			province: "江西省",
+			cityname: "南丰",
+			longspell: "NanFeng",
+			shortspell: "NF",
+			firstchar: "N",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 19,
+			province: "江西省",
+			cityname: "南城",
+			longspell: "NanCheng",
+			shortspell: "NC",
+			firstchar: "N",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 5,
+			province: "江西省",
+			cityname: "萍乡",
+			longspell: "PingXiangShi",
+			shortspell: "PXS",
+			firstchar: "P",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 16,
+			province: "江西省",
+			cityname: "鄱阳",
+			longspell: "PoYang",
+			shortspell: "PYX",
+			firstchar: "P",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 25,
+			province: "江西省",
+			cityname: "铅山",
+			longspell: "QianShan",
+			shortspell: "QS",
+			firstchar: "Q",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 6,
+			province: "江西省",
+			cityname: "上饶",
+			longspell: "ShangRaoShi",
+			shortspell: "SRS",
+			firstchar: "S",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 32,
+			province: "江西省",
+			cityname: "上栗",
+			longspell: "ShangLi",
+			shortspell: "SL",
+			firstchar: "S",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 34,
+			province: "江西省",
+			cityname: "遂川",
+			longspell: "SuiChuan",
+			shortspell: "SC",
+			firstchar: "S",
+			version: 1447776098649,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 103,
+			province: "江西省",
+			cityname: "泰和",
+			longspell: "TaiHe",
+			shortspell: "TH",
+			firstchar: "T",
+			version: 1469808309986,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 8,
+			province: "江西省",
+			cityname: "万年",
+			longspell: "WanNianXian",
+			shortspell: "WNX",
+			firstchar: "W",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 38,
+			province: "江西省",
+			cityname: "万安",
+			longspell: "WanAn",
+			shortspell: "WA",
+			firstchar: "W",
+			version: 1447776098649,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 11,
+			province: "江西省",
+			cityname: "新余",
+			longspell: "XinYuShi",
+			shortspell: "XYS",
+			firstchar: "X",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 35,
+			province: "江西省",
+			cityname: "峡江",
+			longspell: "XiaJiang",
+			shortspell: "XJ",
+			firstchar: "X",
+			version: 1447776098649,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 36,
+			province: "江西省",
+			cityname: "新干",
+			longspell: "XinGan",
+			shortspell: "XG",
+			firstchar: "X",
+			version: 1447776098649,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 13,
+			province: "江西省",
+			cityname: "鹰潭",
+			longspell: "YingTanShi",
+			shortspell: "YTS",
+			firstchar: "Y",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 14,
+			province: "江西省",
+			cityname: "余干",
+			longspell: "YuGanXian",
+			shortspell: "YGX",
+			firstchar: "Y",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 21,
+			province: "江西省",
+			cityname: "玉山",
+			longspell: "YuShan",
+			shortspell: "YS",
+			firstchar: "Y",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 28,
+			province: "江西省",
+			cityname: "宜黄",
+			longspell: "YiHuang",
+			shortspell: "YH",
+			firstchar: "Y",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 37,
+			province: "江西省",
+			cityname: "永新",
+			longspell: "YongXin",
+			shortspell: "YX",
+			firstchar: "Y",
+			version: 1447776098649,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 39,
+			province: "江西省",
+			cityname: "永丰",
+			longspell: "YongFeng",
+			shortspell: "YF",
+			firstchar: "Y",
+			version: 1447776098649,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 18,
+			province: "江西省",
+			cityname: "婺源",
+			longspell: "ZuoYuan",
+			shortspell: "ZY",
+			firstchar: "Z",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 26,
+			province: "江西省",
+			cityname: "弋阳",
+			longspell: "ZuoYang",
+			shortspell: "ZY",
+			firstchar: "Z",
+			version: 1447432560229,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 105,
+			province: "江西省",
+			cityname: "资溪",
+			longspell: "ZiXi",
+			shortspell: "ZX",
+			firstchar: "Z",
+			version: 1470845111032,
+			area_no: null,
+			partnercode: null
+		}
+		],
+		江苏省: [
+		{
+			startcityid: 82,
+			province: "江苏省",
+			cityname: "宝应",
+			longspell: "baoying",
+			shortspell: "by",
+			firstchar: "B",
+			version: 1462455698169,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 74,
+			province: "江苏省",
+			cityname: "常州",
+			longspell: "changzhou",
+			shortspell: "cz",
+			firstchar: "C",
+			version: 1462455698152,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 88,
+			province: "江苏省",
+			cityname: "常熟",
+			longspell: "changshu",
+			shortspell: "cs",
+			firstchar: "C",
+			version: 1462455698181,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 79,
+			province: "江苏省",
+			cityname: "丹阳",
+			longspell: "danyang",
+			shortspell: "dy",
+			firstchar: "D",
+			version: 1462455698162,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 70,
+			province: "江苏省",
+			cityname: "海安",
+			longspell: "haian",
+			shortspell: "ha",
+			firstchar: "H",
+			version: 1462455698144,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 72,
+			province: "江苏省",
+			cityname: "海门",
+			longspell: "haimen",
+			shortspell: "hm",
+			firstchar: "H",
+			version: 1462455698148,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 65,
+			province: "江苏省",
+			cityname: "靖江",
+			longspell: "jingjiang",
+			shortspell: "jj",
+			firstchar: "J",
+			version: 1462455698131,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 66,
+			province: "江苏省",
+			cityname: "姜堰",
+			longspell: "jiangyan",
+			shortspell: "jy",
+			firstchar: "J",
+			version: 1462455698133,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 67,
+			province: "江苏省",
+			cityname: "江阴",
+			longspell: "jiangyin",
+			shortspell: "jy",
+			firstchar: "J",
+			version: 1462455698137,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 76,
+			province: "江苏省",
+			cityname: "金坛",
+			longspell: "jintan",
+			shortspell: "jt",
+			firstchar: "J",
+			version: 1462455698157,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 78,
+			province: "江苏省",
+			cityname: "句容",
+			longspell: "jurong",
+			shortspell: "jr",
+			firstchar: "J",
+			version: 1462455698161,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 84,
+			province: "江苏省",
+			cityname: "江都",
+			longspell: "jiangdu",
+			shortspell: "jd",
+			firstchar: "J",
+			version: 1462455698174,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 89,
+			province: "江苏省",
+			cityname: "昆山",
+			longspell: "kunshan",
+			shortspell: "ks",
+			firstchar: "K",
+			version: 1462455698183,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 75,
+			province: "江苏省",
+			cityname: "溧阳",
+			longspell: "liyang",
+			shortspell: "ly",
+			firstchar: "L",
+			version: 1462455698155,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 69,
+			province: "江苏省",
+			cityname: "南通",
+			longspell: "nantong",
+			shortspell: "nt",
+			firstchar: "N",
+			version: 1462455698142,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 93,
+			province: "江苏省",
+			cityname: "南京",
+			longspell: "nanjing",
+			shortspell: "nj",
+			firstchar: "N",
+			version: 1462455698193,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 73,
+			province: "江苏省",
+			cityname: "启东",
+			longspell: "qidong0",
+			shortspell: "qd",
+			firstchar: "Q",
+			version: 1462455698150,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 59,
+			province: "江苏省",
+			cityname: "如皋",
+			longspell: "rugao",
+			shortspell: "rg",
+			firstchar: "R",
+			version: 1462455698039,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 71,
+			province: "江苏省",
+			cityname: "如东",
+			longspell: "rudong",
+			shortspell: "rd",
+			firstchar: "R",
+			version: 1462455698146,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 60,
+			province: "江苏省",
+			cityname: "苏州",
+			longspell: "suzhou",
+			shortspell: "sz",
+			firstchar: "S",
+			version: 1462455698117,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 85,
+			province: "江苏省",
+			cityname: "宿迁",
+			longspell: "suqian",
+			shortspell: "sq",
+			firstchar: "S",
+			version: 1462455698175,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 86,
+			province: "江苏省",
+			cityname: "泗阳",
+			longspell: "siyang",
+			shortspell: "sy",
+			firstchar: "S",
+			version: 1462455698177,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 87,
+			province: "江苏省",
+			cityname: "沭阳",
+			longspell: "shuyang",
+			shortspell: "sy",
+			firstchar: "S",
+			version: 1462455698179,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 62,
+			province: "江苏省",
+			cityname: "泰州",
+			longspell: "taizhou1",
+			shortspell: "tz",
+			firstchar: "T",
+			version: 1462455698124,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 64,
+			province: "江苏省",
+			cityname: "泰兴",
+			longspell: "taixing",
+			shortspell: "tx",
+			firstchar: "T",
+			version: 1462455698129,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 90,
+			province: "江苏省",
+			cityname: "太仓",
+			longspell: "taicang",
+			shortspell: "tc",
+			firstchar: "T",
+			version: 1462455698186,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 61,
+			province: "江苏省",
+			cityname: "无锡",
+			longspell: "xuxi",
+			shortspell: "wx",
+			firstchar: "W",
+			version: 1462455698120,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 91,
+			province: "江苏省",
+			cityname: "吴江",
+			longspell: "wujiang1",
+			shortspell: "wj",
+			firstchar: "W",
+			version: 1462455698189,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 63,
+			province: "江苏省",
+			cityname: "兴化",
+			longspell: "xinghua",
+			shortspell: "xh",
+			firstchar: "X",
+			version: 1462455698127,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 68,
+			province: "江苏省",
+			cityname: "宜兴",
+			longspell: "yixing",
+			shortspell: "yx",
+			firstchar: "Y",
+			version: 1462455698139,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 80,
+			province: "江苏省",
+			cityname: "扬中",
+			longspell: "yangzhong",
+			shortspell: "yz",
+			firstchar: "Y",
+			version: 1462455698164,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 81,
+			province: "江苏省",
+			cityname: "扬州",
+			longspell: "yangzhou",
+			shortspell: "yz",
+			firstchar: "Y",
+			version: 1462455698167,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 83,
+			province: "江苏省",
+			cityname: "仪征",
+			longspell: "yizheng",
+			shortspell: "yz",
+			firstchar: "Y",
+			version: 1462455698172,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 77,
+			province: "江苏省",
+			cityname: "镇江",
+			longspell: "zhenjiang",
+			shortspell: "zj",
+			firstchar: "Z",
+			version: 1462455698159,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 92,
+			province: "江苏省",
+			cityname: "张家港",
+			longspell: "zhangjiagang",
+			shortspell: "zjg",
+			firstchar: "Z",
+			version: 1462455698191,
+			area_no: null,
+			partnercode: null
+		}
+		],
+		湖南: [
+		{
+			startcityid: 42,
+			province: "湖南",
+			cityname: "长沙",
+			longspell: "ChangSha",
+			shortspell: "CS",
+			firstchar: "C",
+			version: 1452100255179,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 43,
+			province: "湖南",
+			cityname: "衡阳",
+			longspell: "HengYang",
+			shortspell: "HY",
+			firstchar: "H",
+			version: 1452152723940,
+			area_no: null,
+			partnercode: null
+		}
+		],
+		安徽省: [
+		{
+			startcityid: 2,
+			province: "安徽省",
+			cityname: "黄山",
+			longspell: "HuangShanShi",
+			shortspell: "HSS",
+			firstchar: "H",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		},
+		{
+			startcityid: 10,
+			province: "安徽省",
+			cityname: "马鞍山",
+			longspell: "MaAnShanShi",
+			shortspell: "MASS",
+			firstchar: "M",
+			version: 1447310779592,
+			area_no: null,
+			partnercode: null
+		}
+		],
+		四川: [
+		{
+			startcityid: 44,
+			province: "四川",
+			cityname: "绵阳",
+			longspell: "MianYang",
+			shortspell: "MY",
+			firstchar: "M",
+			version: 1452340725759,
+			area_no: null,
+			partnercode: null
+		}
+		],
+		广西: [
+		{
+			startcityid: 45,
+			province: "广西",
+			cityname: "南宁",
+			longspell: "NanNing",
+			shortspell: "NN",
+			firstchar: "N",
+			version: 1452340725759,
+			area_no: null,
+			partnercode: null
+		}
+		],
+		上海: [
+		{
+			startcityid: 104,
+			province: "上海",
+			cityname: "上海",
+			longspell: "ShangHai",
+			shortspell: "SH",
+			firstchar: "S",
+			version: 1470758709922,
+			area_no: null,
+			partnercode: null
+		}
+		]
+	},
+	message: ""
+}
