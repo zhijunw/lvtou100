@@ -2,11 +2,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>个人中心|订票须知</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>个人中心|车站信息</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/person.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/index.js"></script>
 </head>
 <body>
 	<!--头部内容-->
@@ -53,10 +53,10 @@
 			<div class="tab-title">
 				<ul>
 					<li><a href="person.html">新手指南</a><i></i></li>
-					<li class="active"><a href="bookingnotice.html">订票须知</a><i></i></li>
+					<li><a href="bookingnotice.html">订票须知</a><i></i></li>
 					<li><a href="">退票改签</a><i></i></li>
 					<li><a href="pickup.html">如何取票</a><i></i></li>
-					<li><a href="station.html">车站信息</a><i></i></li>
+					<li class="active"><a href="station.html">车站信息</a><i></i></li>
 					<li><a href="paymentway.html">支付方式</a><i></i></li>
 					<li><a href="booking.html">订票流程</a><i></i></li>
 					<li><a href="about.html">关于我们</a><i></i></li>
@@ -66,21 +66,57 @@
 					<li><a href="">场站信息</a><i></i></li>
 				</ul>
 			</div>
-			<!--订票流程的具体内容-->
-			<div class="newsGuide">
-				<div class="newsGuide-title">
-					<h3>订票须知</h3>
+		</div>
+	</div>
+	<!--中间的内容-->
+	<div class="station-content">
+		<div class="wrap">
+			<div class="station-main">
+				<!--左边的车站列表部分-->
+				<div class="station-main-left">
+					<ul>
+						<li><a href="" id="qingshan">青山客运站</a></li>
+						<li><a href="" id="xufang">徐坊客运站</a></li>
+						<li class="active"><a href="" id="hongcheng">洪城客运站</a></li>
+						<li><a href="" id="changnan">昌南客运站</a></li>
+						<li><a href="" id="anyi">安义客运站</a></li>
+						<li><a href="" id="jinxian">进贤客运站</a></li>
+						<li><a href="" id="changan">长安客运站</a></li>
+					</ul>
 				</div>
-				<div class="newsGuide-content">
-					<p>1.  旅途100网上售票系统目前支持江西长运旗下所有车站，包括：南昌市包含徐坊客运站、洪城客运站、昌南客运站、青山客运站、长安客运站。具体站点信息请在始发站中查看。</p>
-					<p>2.  网上购票预售十天，重大节日期间，车票预售天数可能延长，请各位旅客以网上实际显示天数为准。</p>
-					<p>3.  本网站售票系统仅发售普通客票，不发售儿童票、荣军票以及免席儿童票等优惠票。如需购买，请带相关证件到各车站售票窗口购买。</p>
-					<p>4.  购票系统24小时为旅客提供购票服务。当本网站购票系统对当日票限购当前时间提前两小时的汽车票。每位旅客每次购票最多只可购四张，如需订购更多的汽车票请再次查询并购票。</p>
-					<div class="newGuide-erweima">
-						<div class="erweima-box">
-							<img src="images/erweima.png">
+				<!--右边的车站示意图部分-->
+				<div class="station-main-right">
+					<!--洪城客运站-->
+					<div id="hcStation" style="display:block;">
+						<h3>洪城客运站</h3>
+						<div class="hcStaion-add">
+							<p>地址：南昌市建设西路288号</p>
+							<img src="images/hcStation.png">
 						</div>
-							<span>旅途100官方微信公众平台<Br/>http://www.lvtu100.com</span>
+					</div>
+					<!--青山客运站-->
+					<div id="qsStation" style="display:none;">
+						<h3>青山客运站</h3>
+						<div class="hcStaion-add">
+							<p>地址：青山市建设西路288号</p>
+							<img src="images/hcStation.png">
+						</div>
+					</div>
+					<!--徐坊客运站-->
+					<div id="xfStation" style="display:none;">
+						<h3>徐坊客运站</h3>
+						<div class="hcStaion-add">
+							<p>地址：徐坊市建设西路288号</p>
+							<img src="images/hcStation.png">
+						</div>
+					</div>
+					<!--昌南客运站-->
+					<div id="cnStation" style="display:none;">
+						<h3>昌南客运站</h3>
+						<div class="hcStaion-add">
+							<p>地址：昌南市建设西路288号</p>
+							<img src="images/hcStation.png">
+						</div>
 					</div>
 				</div>
 			</div>
